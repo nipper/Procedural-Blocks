@@ -3,6 +3,8 @@ function drawGrass(x1, y1, maxLength) {
     var totalLength = 0;
     var currentLength = 0;
 
+
+
     while (totalLength < maxLength) {
         var height = random(2, 10);
         currentLength = random(2, 6);
@@ -13,8 +15,11 @@ function drawGrass(x1, y1, maxLength) {
         }
 
         fill(color(55, random(150, 255), 55));
-
+        stroke(color(0,0,255));
         rect(x1 + totalLength, y1 - height, currentLength, height, 2, 2, 0, 0, 0);
+        noStroke();
+        rect(x1 + totalLength, y1 - height+1, currentLength, height-1, 2, 2, 0, 0, 0);
+
 
         totalLength += currentLength;
     }
