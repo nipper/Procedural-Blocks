@@ -1,0 +1,19 @@
+when a tile is drawn check:
+
+tile below
+	-> redraw without grass
+tile above
+	-> don't draw grass
+
+any adjacent tile:
+	-> draw speckle
+		- offset by 1/2 tile size in direction of tile
+
+todo:
+	1: sometimes getting 1-2 pixel 'grasses' at edge make these go away
+	2: do offset described above
+		- will need to create 2d grid to store tile locations
+	3: edging tiles
+		- by this i mean adding grass on top
+		- roughening the sides
+		- etc
