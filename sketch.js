@@ -121,16 +121,17 @@ function drawBlock(x1, y1, width, height) {
 
 function drawTile(x1, y1, width, height, density) {
 
-    noStroke();
-    drawBlock(x1, y1, width, height);
-    speckleBlock(x1, y1, width, height, density);
-    speckleBlock(x1, y1, width, height, density);
+    
 
     drawGrass(x1, y1, width);
    // drawTopsoil(x1, y1, width);
     //drawTopsoil(x1, y1, width);
 
-    drawGrass(x1, y1, width);
+    //drawGrass(x1, y1, width);
+    noStroke();
+    drawBlock(x1, y1, width, height);
+    speckleBlock(x1, y1, width, height, density);
+    speckleBlock(x1, y1, width, height, density);
 
 
 }
